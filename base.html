@@ -1,0 +1,76 @@
+<!DOCTYPE html><div class="input-control">
+                    <label for="gender"> Gender </label>
+                    <input type="radio" name="gender" id="male" value="male"> <label > Male </label> 
+                    <input type="radio" name="gender" id="female" value="female"> Female 
+                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form </title>
+    <link rel="stylesheet" href="style.css">
+    <script  src="./script.js"></script>
+    
+    
+</head>
+<body>
+    <h1 class="headingTitle"> Registration Form </h1>
+    <div class="formContainer">
+        <form action="/details.html" id="personalDetails">
+
+                <div class="input-control">
+                    <label for="name"> Name </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name"> <br>
+                    <div class="error"></div>
+                </div>
+               
+                <div class="input-control">
+                    <label for="email"> Email </label> 
+                    <input type="email" name="email" id="email" placeholder="Enter your email" type="email">
+                    <br>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="password"> Password </label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password"> <br>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="dob"> DOB </label>
+                    <input type="date" name="dob" id="dob" placeholder="Enter your DOB"> <br>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="mobile"> Mobile </label>
+                    <input type="tel" name="mobile" id="mobile" placeholder="Enter your mobile"> <br>
+                    <div class="error"></div>
+                </div>
+
+                
+
+                <div class="input-control">
+                    <label for="quali"> Select your Qualification </label> 
+                    <select name="quali" id="quali">
+                        <option value="Bachelor">Bachelor</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Master">Master</option>
+                        <option value="Phd">Phd</option>
+                    </select> <br>
+                </div>
+
+                    <button class="submitBtn" type="submit" click="submit"> Submit </button>
+                    <button class="cancelBtn" type="reset" id="reset" onclick="eraseAll()"> Cancel </button>
+
+        </form>
+        
+
+    </div>
+
+    <div class="tableContainer" id="tableContainer"></div>
+  
+</body>
+</html>
